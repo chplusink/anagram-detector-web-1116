@@ -12,7 +12,7 @@ class Anagram
 	end
 
 	def sort_word(word)
-		word.split("").sort.join("")
+		word.chars.sort
 	end
 
 end
