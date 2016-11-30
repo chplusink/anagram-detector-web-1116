@@ -7,12 +7,7 @@ class Anagram
 
 	def match(words)
 		words.select do |w|
-			sort_word(word) == sort_word(w)
+			word.chars.sort == w.chars.sort
 		end
 	end
-
-	def sort_word(word)
-		word.chars.sort
-	end
-
 end
